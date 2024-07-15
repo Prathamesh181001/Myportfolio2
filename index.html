@@ -4,78 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pratham - Developer Portfolio</title>
+
+    <link rel="stylesheet" href="website2.css">
+
+    <link rel="icon" type="image/x-icon" href="favicon3.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="website2.css">
+
+<!--Font awesome link-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="left"><span id="element"></span></div>
+            <div class="left"><span id="element"></span>
+              <script>
+                var typed = new Typed('#element', {
+                  strings: ["Pratham's Portfolio 👨‍💻"],
+                  typeSpeed: 50,
+                });
+              </script>
+            </div>
             
             <div class="right">
                 <ul>
-                    <li><div class="dropdown">
-                        <a href="https://prathamesh181001.github.io/Myportfolio2/" target="_blank">Home</a>
-                        </div>
-                    </li>
-                    <li><div class="dropdown">
-                        <button class="dropbtn" >Skills
-                          <i class="fa fa-caret-down"></i>
+		    <li><div class="dropdown">
+                        <button class="dropbtn" ><a href="#">Home</a>
                         </button>
-                        <div class="dropdown-content">
-                          <a href="#">C/C++</a>
-                          <a href="#">Python</a>
-                          <a href="#">SQL/DBMS</a>
-                          <a href="#">HTML5</a>
-                          <a href="#">CSS</a>
-                          <a href="#">Bootstrap</a>
-                          <a href="#">Javascript</a>
-                          <a href="#">Django</a>
-                          <a href="#">Flask</a>
-                          <a href="#">Git and Github</a>
-                          <a href="#">Data Analysis</a>
-                          <a href="#">Machine Learning</a>
+		    </li>
+                    <li><div class="dropdown">
+                        <button class="dropbtn" ><a href="#myskills">Skills</a></button>
                         </div>
-                      </div>
                     </li>
                     <li><div class="dropdown">
                         <button class="dropbtn">Certifications
-                          <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="dropdown-content">
-                          <a href="DAR_39_Dalvi Prathamesh Shankar.pdf" target="_blank">Data Analytics(TCSiON)</a>
-                          <a href="AI_39_Dalvi Prathamesh Shankar.pdf" target="_blank">Artificial Intelligence(TCSiON)</a>
-                          <a href="ML_39_Dalvi Prathamesh Shankar.pdf" target="_blank">MachineLearning(TCSiON)</a>
-                          <a href="DL_39_Dalvi Prathamesh Shankar.pdf" target="_blank">Deep Learning(TCSiON)</a>
-                          <a href="#" target="_blank">Data Structures and Algorithms</a>
                           <a href="Python_Certificate_Skillup.pdf" target="_blank">Python Certification Skillup</a>
                           <a href="Python_Certificate_Infosys.pdf" target="_blank">Python Certification Infosys</a>
                           <a href="Data_Analytics_certificate.pdf" target="_blank">Data Analytics Certificate</a>
                           <a href="Eduskill_Internship_certificate.pdf" target="_blank">Eduskill Internship Completion Certificate</a>
+                          <a href="PHN internship certificate.pdf" target="_blank">PHN Internship Completion Certificate</a>
                         </div>
                       </div>
                     </li>
                     <li><div class="dropdown">
                         <button class="dropbtn">Projects
-                          <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="dropdown-content">
-                            <a href="https://prathamesh181001.github.io/Dictionary_Gyan/" target="_blank">Dictionary_Gyan</a>
-                            <a href="https://prathamesh181001.github.io/textutils" target="_blank">Text Para Phraser</a>
-                            <a href="#" target="_blank">Trendstop Footwares Website</a>
-                            <a href="#" target="_blank">Spam-Ham Detection</a>
-                            <a href="#" target="_blank">Second Hand Car Price Prediction</a>
-                            <a href="https://prathamesh181001.github.io/Demonstration-of-ATM" target="_blank">ATM Demonstration</a>
-                            
+                            <a href="#dictionary-main">Dictionary_Gyan</a>
+			    <a href="#para-main" target="_blank">Text Para Phraser</a>
+                            <a href="#trendstop-main" target="_blank">Trendstop Footwares Website</a>
+                            <a href="https://prathamesh181001.github.io/Demonstration-of-ATM" target="_blank">Spam-Ham Detection</a>
+                            <a href="https://prathamesh181001.github.io/Demonstration-of-ATM" target="_blank">Second Hand Car Price Prediction</a>
                         </div>
                       </div>
                     </li>
                     <li><div class="dropdown">
                         <button class="dropbtn">Contact Me
-                          <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="dropdown-content">
                           <a href="mailto:prathamesh11psd@gmail.com" target="_blank">G-mail</a>
@@ -92,52 +84,148 @@
     <main>
         <section class="firstsection">
             <div class="leftsection">
-                Hi, My name is <span class="purple"><b>Prathamesh Dalvi</b></span> 
-                <div>I am a passionate
-                <div>Data Science Engineer</div>
-                as well as a
-                <div>Web Developer</div></div>
+              <h3>Hey there! 👋</h3>
+              <h2 class="purple"><b>Prathamesh Dalvi</b></h2>
+              <p>Welcome to my world of possibilities! 🌟</p>
+              <p>I'm a data maestro 📊 and a code sorcerer 💻✨.</p>
+              <p>Join me on this journey of innovation! 🚀</p>
                 <div class="buttons">
-                    <button class="btn" target="_blank" onclick="window.location.href = 'RESUME.pdf';">Download Resume</button>
+                    <button class="btn" onclick="window.location.href = 'RESUME.pdf';">Download Resume</button>
                     <button class="btn" onclick="window.location.href = 'https://github.com/Prathamesh181001';">Visit Github</button>
                 </div>
                <!-- <span id="element"></span>-->
 
             </div>
             <div class="rightsection">
-                <img src="3.png" alt="">
+                <img src="3.png" alt="main-image">
             </div>
         </section>
-        <hr>
-        <section class="secondsection">
+
+
+	<section class="secondsection">
+            <h1>Skills</h1>
+	    <span class="text-gray">Skillset Includes...</span>
+            <div class="skills" id="myskills">
+                <ul>
+			<li>C Language</li>
+			<li>C++ Language</li>
+			<li>Python</li>
+			<li>HTML5</li>
+		</ul>
+		<ul>
+			<li>CSS</li>
+			<li>Bootstrap CSS</li>
+			<li>Javascript</li>
+			<li>Django</li>
+		</ul>
+		<ul>
+			<li>Data Analysis</li>		
+			<li>Machine Learning</li>
+			<li>Deep Learning</li>
+			<li>Natural Language Processing</li>
+			
+		</ul>
+            </div>
+        </section>
+
+
+        <section class="thirdsection">
+            <h1>Projects</h1>
             <span class="text-gray">What I have done so far...</span>
-            <h1>Work Experience</h1>
-            <div> 
-                <h4><ul>Persuing Certification in Honours Degree of Data Analytics and Reporting offered by TCS iON.</ul></h4>
-                <h4><ul>Persuing Certification in Honours Degree of Artificial Intelligence offered by TCS iON.</ul></h4>
-                <h4><ul>Persuing Certification in Honours Degree of Machine Learning offered by TCS iON.</ul></h>
-                <h4><ul>Persuing Internship at Numetry Technologies Pune as a Full Stack Python Intern.</ul></h4>
-                <h4><ul>Completed Internship at PHN Technologies in the field of Python for Data Science.</ul></h4>
+            <div class="projects">
+               <ul>
+			<li>
+				<div class="main" id="dictionary-main">
+					<div class="first"><h3>Dictionary Gyan</h3></div>
+					<div class="second">The Dictionary App, built with HTML5, CSS, and JavaScript, provides instant word meanings through a user-friendly interface. Features include real-time search, comprehensive definitions and responsive design for all devices.</div>
+				</div>
+			<a href="https://prathamesh181001.github.io/Dictionary_Gyan/">Go To Project</a>
+			<img src="dictionary.png" alt="dictionary front page">
+			</li>
+
+			<li>
+				<div class="main" id="para-main">
+					<div class="first"><h3>Text Para Phraser</h3></div>
+					<div class="second">A text paraphraser app with a React front end offers users an intuitive interface for rephrasing text. Easily deployable, it ensures fast, reliable access to paraphrasing services, enhancing writing and learning experiences across various domains.</div>
+				</div>
+			<a href="https://prathamesh181001.github.io/textutils/">Go To Project</a>
+			<img src="textutils.png" alt="text para front page">
+			</li>
+
+			<li>
+				<div class="main" id="trendstop-main	">
+					<div class="first"><h3>Trendstop Footwares Website</h3></div>
+					<div class="second">Created a full-featured e-commerce footwear website, Trendstop, using Django, HTML, CSS, and JavaScript. Created Django projects and apps for products, users, and orders, configured the database, and defined models to manage and display products effectively.</div>
+				</div>
+			<img src="#" alt="trendstop front page">
+			</li>			
+
+			<li>
+				<div class="main">
+					<div class="first"><h3>Spam-Ham Detection</h3></div>
+					<div class="second">Created a spam-ham detection ML project which involves building a classifier to identify and separate spam (unwanted) from ham (legitimate) emails or messages using techniques of machine learning algorithms such as Naive Bayes and SVM</div>
+				</div>
+			<img src="#" alt="spam ham front page">
+			</li>
+
+<li>
+				<div class="main">
+					<div class="first"><h3>Second Hand Car Price Prediction</h3></div>
+					<div class="second">Created and develop a machine learning model that estimates the market value of used cars based on features like make, model, year, mileage, condition, and location, using algorithms like linear regression and decision trees.</div>
+				</div>
+			<img src="#" alt="second hand car front page">
+			</li>
+		</ul> 
             </div>
         </section>
-    </main>
-    <hr>
-    <footer>
-        <div class="footer">
+</main>
+
+<footer>
             <h2>"Portfolios are everything, promises are nothing. Do the work."</h2>
-        </div>
-        <div class="footer-rights">
-            copyright &#169; https://prathamesh181001.github.io/Myportfolio2/ | All rights reserved | Privacy Policy.
-        </div>
-    </footer>
+
+<div class="mainfooter">
+<div class="subfooter1">
+ <div class="f1">
+   <h3>Don't miss a thing</h3>
+   <p>Enter your email below to know me and contact me.</p>
+  <form action="abc.php" method="post">
+   <input type="text" name="email" id="email" placeholder="Enter your email" required>
+   <input type="submit" value="Submit">
+  </form>
+ </div>
+ <div class="f2">
+   <a href="tel:8530819074"><i class="fa-solid fa-address-book"></i></a>
+   <a href="https://x.com/wonderboy181001"><i class="fa-brands fa-twitter"></i></i></a>
+   <a href="#"><i class="fa-brands fa-instagram"></i></a>
+ </div>
+</div>
+
+
+<div class="subfooter3">
+ <h3>Reach Us Out</h3>
+ <ul>
+  <a href="#"><li>Instagram: wonderboy_official_</li></a>
+  <a href="tel:8530819074"><li>Contact: +91 8530819074</li></a>
+  <a href="mailto:prathamesh11psd@gmail.com"><li>Email: prathamesh11psd@gmail.com</li></a>
+  <a href="#"><li>Address: Medha, Satara, Maharashtra. (India)</li></a>
+ </ul>
+
+</div>
+</div>
+
+<div class="end">
+<h3 class="copyright">&copy; abc 2023-2024 | </h3>
+<div class="f3">
+   <a href="tel:8530819074"><i class="fa-solid fa-address-book"></i></a>
+   <a href="https://x.com/wonderboy181001"><i class="fa-brands fa-twitter"></i></i></a>
+   <a href="#"><i class="fa-brands fa-instagram"></i></a>
+</div>
+</div>
+</footer>
+
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
      <!-- Setup and start animation! -->
-  <script>
-    var typed = new Typed('#element', {
-      strings: ["Pratham's Portfolio"],
-      typeSpeed: 50,
-    });
-  </script>
+  
 </body>
 </html>
