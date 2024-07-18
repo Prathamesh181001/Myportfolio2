@@ -13,7 +13,7 @@ nav{
  display: flex;
  justify-content: space-around;
  align-items: center;
- height: 5rem;
+ height: auto;
  background: linear-gradient(to top, #003300 0%, #9900ff 100%);
 }
 
@@ -172,7 +172,7 @@ nav ul li a:hover{
  display: flex;
  list-style: circle;
  padding: 2rem 6rem;
- line-height:200%;
+ line-height: 200%;
 }
 
 .secondsection .skills ul{
@@ -190,10 +190,12 @@ nav ul li a:hover{
 
 .thirdsection li{
  margin: 1rem;
+ padding-bottom: 3rem;
 }
 
 .main{
  display: flex;
+ margin-bottom: 1rem;
 }
 
 .main .first{
@@ -207,13 +209,14 @@ nav ul li a:hover{
  font-size: 1.2rem;
 }
 
+
+
 li img{
  display: block;
  margin-left: auto;
  margin-right: auto;
  width: 80%;
  height: 600px;
- padding-bottom: 3rem;
 }
     
 
@@ -261,7 +264,7 @@ h2{
  border: 1px solid grey;
  border-radius: 10%;
  margin: 1rem 0;
- padding: 0.1rem;
+ padding: 0.2rem;
 }
 
 .subfooter1 input[type=submit]:hover{
@@ -274,7 +277,7 @@ h2{
 }
 
 .f2 .fa-brands, .f2 .fa-solid{
- width: 23%;
+ width: 20%;
  color: white;
 }
 
@@ -310,4 +313,170 @@ footer .copyright{
  padding: 0 1rem;
  font-size: 1.2rem;
  color: white;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width:1300px){
+
+nav .left {
+ width: 35%;
+}
+
+nav .right{
+ width: 65%;
+}
+
+}
+
+@media screen and (max-width:1100px){
+
+nav .left {
+ width: 25%;
+}
+
+nav .right{
+ width: 75%;
+}
+
+.firstsection{                             
+ display: flex;
+ flex-direction: column;
+ height: auto;
+ padding: 1rem;
+}
+
+.firstsection .leftsection{
+ width: 80%;
+ text-align: center;
+}
+
+.leftsection{
+ font-size: 1.5rem;
+}
+
+}
+
+@media screen and (max-width:950px){
+
+nav .left {
+ width: 80%;
+ text-align: center;
+}
+
+nav .right{
+ width: 80%;
+ text-align: center;
+}
+
+nav{
+ display: flex;
+ flex-direction: column;
+}
+
+.secondsection{
+ max-width: 80vw;
+ margin: 5% 10%;
+ margin-top: 10%;
+}
+
+.secondsection h1, .thirdsection h1{
+ text-align: center;
+}
+
+.secondsection .skills{
+ display: block;
+}
+
+.main{
+ display: flex;
+ flex-direction: column;
+}
+
+.main .first{
+ width: 100%;
+}
+
+}
+
+@media screen and (max-width: 750px){
+ 
+nav .left {
+ width: 100%;
+ text-align: center;
+}
+
+.secondsection .skills{
+ padding: 2rem 4rem;
+}
+
+.secondsection .skills ul{
+ width: 80%;
+}
+
+nav ul li{
+ padding: 0.5rem;
+}
+
+nav .right{
+ width: 100%;
+ text-align: center;
+}
+
+li img{
+ display: none;
+}
+
+.mainfooter{
+ display: flex;
+ flex-direction: column;
+ align-items: center;	
+}
+
+.subfooter1{
+ width: 70%;
+ text-align: center;
+ margin-left: 0;
+}
+
+.subfooter1 input[type=text]{
+ width: 60%;
+}
+
+.subfooter1 input[type=submit]{
+ width: 20%;
+}
+
+.subfooter3{
+ display: none;
+}
+
+}
+
+
+@media screen and (max-width: 550px){
+
+nav ul{
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.leftsection .buttons{
+ display: flex;
+ flex-direction: column;
+ margin: 1rem;
+}
+
+.leftsection .btn{
+ margin: 0.5rem;
+}
+
+.end{
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ padding-bottom: 1rem;
+}
+
 }
